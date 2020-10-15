@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import MetaTags from "react-meta-tags";
-import { Redirect } from "react-router-dom";
-import MaindHOC from "../components/MainHOC";
+import React, { Component } from 'react';
+import MetaTags from 'react-meta-tags';
+import { Redirect } from 'react-router-dom';
+import MaindHOC from '../components/MainHOC';
 
 class Home extends Component {
   constructor(props) {
@@ -26,12 +26,12 @@ class Home extends Component {
           });
         },
         (error) => {
-          alert("Error dectecting your location");
+          alert('Error dectecting your location');
         },
         { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
       );
     } else {
-      alert("Please allow Geo Location permissions to access this facility");
+      alert('Please allow Geo Location permissions to access this facility');
     }
   };
 
@@ -45,16 +45,16 @@ class Home extends Component {
         <MetaTags>
           <title>MyCovidConnect: Find Nearest Healthcare facility</title>
           <meta
-            name="description"
-            content="MyCovidConnect: Find Nearest Healthcare facility"
+            name='description'
+            content='MyCovidConnect: Find Nearest Healthcare facility'
           />
           <meta
-            name="keywords"
-            content="MyCovidConnect: Find Nearest Healthcare facility"
+            name='keywords'
+            content='MyCovidConnect: Find Nearest Healthcare facility'
           />
         </MetaTags>
-        <div id="banner">
-          <div className="banner-in">
+        <div id='banner'>
+          <div className='banner-in'>
             <h1>Big Title</h1>
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
